@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <h1 align="center">
+   
+
+   </h1>
+
+    <meta charset="UTF-8">
+    <title>诗来音乐</title>
+    
+    
+    
+    
+    <script type="text/javascript"src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+    
+          
+          $(function(){
+          
+          
+           var mn = 1;
+           
+           var e = 0 ;
+           
+           var array = [];
+           
+           var n = 0 ;
+           
+           var music = 1 ;
+    
+            $('a').click(function(){
+            
+            var index = $(this).index();
+            
+            $('#img').attr("src",$(this).children("li").children("img").attr("src"));
+            
+            
+            if(index != 0){
+            
+            
+            var  k = music ; 
+            
+            
+            };
+            
+            
+            
+            
+            
+            if(index != 0 && k == music){
+            
+            $("li").css({"background-color":"#000000"});  
+            
+            };
+            
+          if(index != 0){
+            array.push(index);
+            array.push(index);
+            array.push(index);
+            };
+            
+            if(index==0 && n == 0){
+            
+            
+            n = 1 ;
+            
+            
+            $("li").css({"background-color":"#000000"});  
+            
+           
+           
+        
+           
+        //   alert(array);
+            
+           
+            
+        
+            
+          
+           
+            
+            
+            }else{
+            
+           l = array.pop(index);
+            
+  
+            
+            $("a").eq(l-1).children("li").css({"background-color":"#2F4F4F"});     
+            
+           array.push(l);
+          
+           
+            n = 0;
+            
+            };
+   
+            if(e==0&&index != 0){
+            
+            change1(index);
+            
+            yin();
+            
+            }else if(index != 0){
+            
+            change2(index);
+            
+            yin();
+            
+          
+            };
+          
+            
+            
+            
+            
+            if(index == 0 && mn ==0){
+            
+          
+           var music = 20;
+            
+            $("#f").attr("src","https://s1.328888.xyz/2022/05/02/AF3UB.png");
+                     
+            $("#f").css({"width":"40%","position":"relative","top":"30%","left":"1px"});
+            
+            mn = 1;
+            
+            
+            
+           e = 0;
+            
+            music1();
+            
+            music += 1;
+            
+            
+            
+            
+            
+            
+            
+            }else if(index == 0 && mn ==1){
+         
+           $("#f").attr("src","https://s1.328888.xyz/2022/05/02/AFKqT.jpg");
+            
+            $("#f").css({"width":"20%","position":"relative","left":"12px","top":"95px"});        
+              
+         
+            
+            mn = 0;
+            
+            music -= 1  ;
+            
+            e = 2;
+            
+            music2();
+            
+            
+            }else{
+            
+            img(index);
+            
+            
+            
+            
+            
+            };
+            
+          
+            
+           });
+           
+               var num = 0;
+    
+           $('#img2').click(function(){
+            
+             if(num==0){
+             
+           
+            
+            $(this).attr("src","https://s1.328888.xyz/2022/05/02/AFaoM.png");
+            
+            
+            num = 1;
+            
+            audio1();
+        
+
+             }else{
+             
+                         
+            $(this).attr("src","https://s1.328888.xyz/2022/05/02/AFOw2.png");
+            
+            num = 0;
+            
+            audio2();
+            
+             };
+            
+            
+            });
+          
+          
+          });
+          
+          function audio1(index){
+          
+
+         var audioEle = $("#audio")[0];
+		 audioEle.play();	//播放
+      
+        
+
+          
+          };
+          
+          function audio2(){
+          
+          var audioEle = $("#audio")[0];
+		 audioEle.pause();
+          
+          
+          
+          
+          };
+          
+         function music1(){
+         
+       
+         $("#y1").attr("src","https://s1.328888.xyz/2022/05/02/AVWLZ.jpg");
+         
+         $(".li_text").eq(0).text("稻香");
+         
+         $("#y2").attr("src","https://s1.328888.xyz/2022/05/02/AVt6X.jpg");
+         
+         
+         $(".li_text").eq(1).text("不将就");
+         
+         
+         $("#y3").attr("src","https://s1.328888.xyz/2022/05/02/AVd8M.jpg");
+         
+         $(".li_text").eq(2).text("耗尽");
+         
+          $("#y4").attr("src","https://s1.328888.xyz/2022/05/02/AVlR7.jpg");
+          
+          $(".author").eq(2).text("薛之谦");
+           
+         $(".li_text").eq(3).text("海阔天空");
+         
+                  
+         $(".author").eq(3).text("Beyond");
+         
+         
+         
+         
+         
+         };
+         
+         function music2(){
+         
+         $("#y1").attr("src","https://s1.328888.xyz/2022/05/02/Ave1C.jpg");
+         
+         $(".li_text").eq(0).text("蒲公英的约定");
+         
+         $("#y2").attr("src","https://s1.328888.xyz/2022/05/02/AVt6X.jpg");
+         
+         $(".li_text").eq(1).text("年少有为");
+         
+         
+         $("#y3").attr("src","https://s1.328888.xyz/2022/05/02/A69Gd.jpg");
+         
+         $(".li_text").eq(2).text("雅俗共赏");
+         
+         $(".author").eq(2).text("许嵩");
+         
+          $("#y4").attr("src","https://s1.328888.xyz/2022/05/02/A6AfM.jpg");
+         
+         $(".li_text").eq(3).text("借口");
+         
+          $(".author").eq(3).text("周杰伦");
+         
+         
+         };
+         
+         
+         
+         
+         function change1(index){
+         
+         var list1 = ["http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600902000006889010&resourceType=2&channel=0","http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000000528509&resourceType=2&channel=0"," http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000002327164&resourceType=2&channel=0 ","  http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600913000009337537&resourceType=2&channel=0"];
+         
+         $("#audio").attr("src",list1[index-1]);
+         
+        $("#img1").remove();
+        
+        var list_img1 = ["http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/4c415e2232218199d62f578618dee4ad/6dbe320c18270198ea980b0f8551c87f","     http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/d6e132b4e47f7a85b3fe652105a81bd6/ce3e2f835e952cb92f9babfb06d7b238 ","  http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/bbe5d45a23069865aef413d36e5c7178/b52bcaf888d8a72187d400b4395883e0  ","    http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/fef0b36ac8eeafaa4a61a14c6f6f9d13/884b7871712cadbdae7e96000f488cd9"];
+        
+        
+        $("body").css({"background-image":"url(" + list_img1[index-1] + ")","background-size":"auto 4500%"});
+       
+         
+         
+         };
+          
+          
+          
+          function change2(index){
+         
+         
+         var list2 = ["http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600902000006889082&resourceType=2&channel=0  ","http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000000528493&resourceType=2&channel=0  ","  http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600907000000392226&resourceType=2&channel=0","  http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000004112437&resourceType=2&channel=0 "];
+         
+         $("#audio").attr("src",list2[index-1]);
+         
+         $("#img1").remove();
+         
+         
+         var list_img2 = ["  http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/7228be0347a2cf256ecbe9a677d0f583/6c7682c41cd87fb3c576275b672a642c  "," http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/5f439f57feab29d1bb678fdf84cc7c01/ff750639f431814da7ff36080a2b8248  ","  http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/d6ac70e448ff3cd5d545cf44d0d7a2c0/e25322176704384f383303dbfc6e14f3 ","  http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/5513f311e612912ed77276103466308a/94b7deddffa6bf237863047fbc03e7f0 "];
+                 
+        $("body").css({"background-image":"url(" + list_img2[index-1] + ")","background-size":"auto 4500%"});
+       
+          
+         };
+          
+          
+     
+       function yin(){
+       
+     $("#img2").attr("src","https://s1.328888.xyz/2022/05/02/AFaoM.png");
+            
+     audio1();
+       
+       
+       };
+        
+       
+         
+  
+    </script>
+  
+    <style tpye="text/css">
+       
+       
+       body{
+       
+      background-image: url("");
+      :950px 200px;
+       
+       }
+       
+       a{
+       
+       text-decoration:none;
+       
+       background:rgba(0,0,0,.5);
+       
+       
+         }
+         
+       li{
+       
+       
+
+
+       
+       
+       }
+       
+       
+       
+         
+       .hai{
+       position:relative;
+       right:100px;
+       bottom:150;
+       
+       
+         }
+         
+       .change{
+       
+                  
+       border-radius:30px;
+  
+       height:285px;
+       position:absolute;
+       left:800px;
+       top:450px;
+       background-color:#000000;
+       
+       
+       
+                }
+                
+      
+       
+       .choose{
+       
+           
+       border-radius:30px;
+       width:90%;
+       height:10%;
+       position:absolute;
+       right:15px;
+       top:450px;
+    
+       
+       
+       }
+       
+       .li_text{
+       
+       
+       position:relative;left:110px;    
+       bottom:60px;font-size:20px
+       
+       }
+       
+       .author{
+       
+       
+       position:relative;left:110px;    
+       bottom:60px;font-size:15px;
+       color:#808080;
+       
+       }
+       
+       ul li img{
+       
+       width:25%;
+       border-radius:30px;
+                }
+       
+       ul li{
+       
+           list-style: none;
+           
+           width:40%;
+           background-color:#000000;
+           
+           
+           }
+           
+           
+       .text{
+       
+            border:1px solid witle;
+            list-style: none;
+            
+            margin:0 auto;
+            height:60px;
+            text-align: left ;
+            color: #fff;
+            
+          
+           }
+       
+       .mu{
+       
+    
+       border-radius:30px;
+       width:90%;
+       height:30%;
+       position:absolute;
+       margin: 10px;
+       background-image:url("https://images.pexels.com/photos/4552688/pexels-photo-4552688.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+       
+       
+       box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6) ;
+       
+       }
+       
+       
+       .png{
+       
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 10%;
+
+                }
+                
+       .center{
+				background-color: #808080;
+				
+	        background-color: rgba(105,105,105, 0.8);
+			position: absolute;
+            bottom: 0;
+            left:0;
+            width: 99%;
+            height:85%;
+            border-radius:30px;
+            box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.6) ;
+            text-align: center;
+         /*   animation: go 2s ease-in 0s infinite alternate;*/
+			}
+			
+			
+			
+		            @keyframes go {  /*定义动画 在x轴移动600px*/
+                from{
+                    transform: translateX(0px);
+          transform: scale(1, 0.5);
+                    
+                    
+                }to{
+                    
+                    transform: translateY(100px);
+                    
+                    
+                
+                }
+            }
+			
+			
+			
+			
+    </style>
+    
+    
+      
+     <div style="background-color:#808080;position:absolute;bottom
+     :0;width:40%;left:0;">
+     
+     </div>
+     
+  
+     
+     <div class="center">
+     
+         
+       <div class="mu"> 
+       
+       
+       <img id="img" src="https://s1.328888.xyz/2022/05/02/AVt6X.jpg"style="width:30%;border-radius:30px;position:relative;
+  top:10px;right:300px; "/> 
+  
+  
+   <img id="img2" src="https://s1.328888.xyz/2022/05/02/AFOw2.png"style="width:50%;border-radius:30px;position:absolute;
+  top:65px;right:30px; width:10%;"/> 
+
+
+  
+  
+      
+       </div>
+    
+     </div>
+	
+
+	        
+	
+    <div class="choose">
+          
+             
+        
+               <ul>
+                    
+
+                    
+                    <li style="border-radius:30px 30px 0px 0px;position:absolute;
+       right:250px;
+       bottom:160px;
+       width: 340px;
+    
+"><div >&nbsp;&nbsp;</div></li>             
+
+                    
+                    <a href="javascript:dai();">
+                                   <li class="text"><img id="y1"  src="https://s1.328888.xyz/2022/05/02/AVWLZ.jpg"/><div class="li_text">稻香</div><div class="author">周杰伦</div></li>
+                                   </a>
+                    
+               
+                     <a href="javascript:   li();">
+                             
+                    
+                    <li class="text"><img id="y2" src="https://s1.328888.xyz/2022/05/02/AVt6X.jpg"/><div class="li_text">不将就</div><div class="author">李荣浩</div></li>
+                    </a>
+               
+                                   
+                                   
+                     <a href="javascript:   bi();">
+                    <li class="text"><img id="y3" src="https://s1.328888.xyz/2022/05/02/AVd8M.jpg"/><div class="li_text">耗尽</div><div class="author">薛之谦&郭聪明</div></li>
+                   
+                    </a>
+                    
+               
+                     <a href="javascript:   hai();"><li class="text"><img id="y4" src="https://s1.328888.xyz/2022/05/02/AVlR7.jpg"/><div class="li_text">海阔天空</div><div class="author">Beyond</div></li></a>
+                    
+                    
+
+                    
+                    <li style="border-radius:0px 0px 30px 30px;
+"><div >&nbsp;&nbsp;</div></li>
+
+                    
+                                   
+               </ul>
+               
+               
+
+           </div>
+           
+           
+ <div class="change">
+                               <a href="#">
+<img id="f" src="https://s1.328888.xyz/2022/05/02/AF3UB.png"style="position:relative;top:30%; "width="80px"/> 
+               </a>
+               
+               </div>
+               
+             <!--music-->
+<audio class="music" id="audio" src="http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000000528509&resourceType=2&channel=0" loop="loop"></audio>
+
+
+  
+               
+</body>
+</html>
