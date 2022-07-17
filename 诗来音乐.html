@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
    <h1 align="center">
    
 
    </h1>
-
+   <link rel="icon" href="https://s1.328888.xyz/2022/07/17/NgVnj.jpg" type="image/x-icon">
     <meta charset="UTF-8">
     <title>诗来音乐</title>
     
@@ -15,6 +15,99 @@
     
     <script type="text/javascript"src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     
+    <script>
+    
+    //处理键盘问题
+    
+    var oHeight = $(document).height();
+    $(window).resize(function(){
+        if($(document).height() < oHeight){
+        
+            $('#img2').css("top","65px");
+            $('#img').css("top","0px");
+            $('#text').css("top","1px");
+            $('#da').css({"height":"85%","top":"100px"});        
+            $("#mu").css("height","173px");
+         
+            
+        }else{
+        
+            $('#img2').css("top","65px");
+            $('#text').css("bottom","110px");
+            
+            
+        }
+    })
+    
+      </script>
+      
+      
+
+    <script type="text/javascript">
+    
+    var n = 0 ;
+    
+    
+    
+    
+    
+
+  $(function(){
+    $('#search3').click(function(){
+            
+            
+         //   alert(this);
+            
+          var value = $(".search2").val() 
+            
+         if(value.length > 0 || n == 0){
+         
+         
+           $(this).parent().css({"width":"300px"});
+           
+             setTimeout(function(){ 
+             
+            // var ku = $("<input class='search2'type='search'placeholder='搜歌'>");
+          //   $(".search").append(ku);
+             
+             $(".search2").css({"width":"250px","height":"30px","display":"block"}); 
+          
+             
+             
+             }, 300);
+           
+           
+           
+           n = 1;
+            
+            }else{
+            
+            $(this).parent().css({"width":"55px"});
+           
+           $(".search2").css({"width":"0px","height":"0px","display":"none"});
+            
+            n = 0;
+            
+            
+            
+            }
+            
+            
+            
+            
+            
+            
+            
+            });});
+    
+    
+    
+    </script>
+    
+    
+    
+    
+
     <script type="text/javascript">
     
           
@@ -125,7 +218,7 @@
             
             $("#f").attr("src","https://s1.328888.xyz/2022/05/02/AF3UB.png");
                      
-            $("#f").css({"width":"40%","position":"relative","top":"30%","left":"1px"});
+            $("#f").css({"width":"100%","position":"relative","top":"30%","left":"1px"});
             
             mn = 1;
             
@@ -147,7 +240,7 @@
          
            $("#f").attr("src","https://s1.328888.xyz/2022/05/02/AFKqT.jpg");
             
-            $("#f").css({"width":"20%","position":"relative","left":"12px","top":"95px"});        
+            $("#f").css({"width":"70%","position":"relative","left":"12px","top":"95px"});        
               
          
             
@@ -271,11 +364,11 @@
          $(".li_text").eq(1).text("年少有为");
          
          
-         $("#y3").attr("src","https://s1.328888.xyz/2022/05/02/A69Gd.jpg");
+         $("#y3").attr("src","https://s1.328888.xyz/2022/07/16/NkBym.jpg");
          
-         $(".li_text").eq(2).text("雅俗共赏");
+         $(".li_text").eq(2).text("世间美好与你");
          
-         $(".author").eq(2).text("许嵩");
+         $(".author").eq(2).text("柏松");
          
           $("#y4").attr("src","https://s1.328888.xyz/2022/05/02/A6AfM.jpg");
          
@@ -291,7 +384,7 @@
          
          function change1(index){
          
-         var list1 = ["http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600902000006889010&resourceType=2&channel=0","http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000000528509&resourceType=2&channel=0"," http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000002327164&resourceType=2&channel=0 ","  http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600913000009337537&resourceType=2&channel=0"];
+         var list1 = ["http://ws.stream.qqmusic.qq.com/C4000027Y5Pd2kJ5I7.m4a?guid=934908476&vkey=DDDE9C4D92486D9C2054E581328DA919030CFC5DF3A96DE9BE9D18554849CB352130C9493AF690B2F814FCBD2F4A63636A5C2A7F5AA37FB8&uin=&fromtag=120032","http://ws.stream.qqmusic.qq.com/C400002l3MPE1qoTk9.m4a?guid=578525894&vkey=793F64A6BDBC409B3D21B1F8E8C7D27D5E1ABB00D333C9114A29A711B054ABD88854487B2826721342ED5C7FCF42B18595451ADE06C9F0CB&uin=&fromtag=120032","     http://ws.stream.qqmusic.qq.com/C4000005REWr0c8pMn.m4a?guid=366788792&vkey=516C32476AF155CCA40C1D8400421B07418C082FD9EA8A25F196630F579899670F5156A2558E5FB2375AB315162716CAD962E34F70D38BF7&uin=&fromtag=120032    ","  http://ws.stream.qqmusic.qq.com/C400000xurzK0fk3Ot.m4a?guid=167012683&vkey=B47B8387B27566C20BE3C5176EAC6A20139642FB70E86BF0F25B9440F21F51C9DB1B38B141B599084F17B2E14F06C0862ED4352FAD2B6BE6&uin=&fromtag=120032"];
          
          $("#audio").attr("src",list1[index-1]);
          
@@ -300,7 +393,7 @@
         var list_img1 = ["http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/4c415e2232218199d62f578618dee4ad/6dbe320c18270198ea980b0f8551c87f","     http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/d6e132b4e47f7a85b3fe652105a81bd6/ce3e2f835e952cb92f9babfb06d7b238 ","  http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/bbe5d45a23069865aef413d36e5c7178/b52bcaf888d8a72187d400b4395883e0  ","    http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/fef0b36ac8eeafaa4a61a14c6f6f9d13/884b7871712cadbdae7e96000f488cd9"];
         
         
-        $("body").css({"background-image":"url(" + list_img1[index-1] + ")","background-size":"auto 4500%"});
+        $("body").css({"background-image":"url(" + list_img1[index-1] + ")","background-size":"auto 1500%"});
        
          
          
@@ -310,17 +403,18 @@
           
           function change2(index){
          
+         //音乐2页
          
-         var list2 = ["http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600902000006889082&resourceType=2&channel=0  ","http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000000528493&resourceType=2&channel=0  ","  http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600907000000392226&resourceType=2&channel=0","  http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000004112437&resourceType=2&channel=0 "];
+         var list2 = ["   http://ws.stream.qqmusic.qq.com/C400001fEtVt0Amq52.m4a?guid=776917379&vkey=525F9EEAB6653F3BA80AD4F3DB58B19CB537E92EC2489C9A8DDFF69858895DB4F32E61B81A6B4F1A90AF68F0A24C5E03B4A32ECA0122B427&uin=&fromtag=120032  ","    http://ws.stream.qqmusic.qq.com/C400002TRY4a3zfxC8.m4a?guid=418416949&vkey=90E2E4DB2197720D7C0B6DA445986168F1C933E4FCCC5727C3FC53777376C61871AFA4D6334A5921654C222E0D2750CCCBF97706B2EF00A6&uin=&fromtag=120032 ","http://m701.music.126.net/20220716200636/0a66f742f9819e955dc63db7499b6dd1/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096410267/0adb/e6bc/bb93/8937b88be6e4b2c38966e838a64173ad.mp3","      http://ws.stream.qqmusic.qq.com/C400002kJEux0hnCJ6.m4a?guid=800254375&vkey=F15EAC1E61861E16A4FD4A0FFCAF2F369E229E233A714483D99FAD07BD947B85D3A5AD085C59D78C7259272F50E136FEBF4DB274111D9650&uin=&fromtag=120032     "];
          
          $("#audio").attr("src",list2[index-1]);
          
          $("#img1").remove();
          
          
-         var list_img2 = ["  http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/7228be0347a2cf256ecbe9a677d0f583/6c7682c41cd87fb3c576275b672a642c  "," http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/5f439f57feab29d1bb678fdf84cc7c01/ff750639f431814da7ff36080a2b8248  ","  http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/d6ac70e448ff3cd5d545cf44d0d7a2c0/e25322176704384f383303dbfc6e14f3 ","  http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/5513f311e612912ed77276103466308a/94b7deddffa6bf237863047fbc03e7f0 "];
+         var list_img2 = ["  http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/7228be0347a2cf256ecbe9a677d0f583/6c7682c41cd87fb3c576275b672a642c  "," http://d.musicapp.migu.cn/prod/file-service/file-down/8121e8df41a5c12f48b69aea89b71dab/5f439f57feab29d1bb678fdf84cc7c01/ff750639f431814da7ff36080a2b8248  "," https://img.shipin520.com/video_cover/69/76/30/a_UrQphjfEARVw1589697630-1080-v1.jpg?imageView2/1/sharpen/1/w/534/h/300","  http://d.musicapp.migu.cn/prod/file-service/file-down/b1899d500dda5db2da11df3efc89cba6/5513f311e612912ed77276103466308a/94b7deddffa6bf237863047fbc03e7f0 "];
                  
-        $("body").css({"background-image":"url(" + list_img2[index-1] + ")","background-size":"auto 4500%"});
+        $("body").css({"background-image":"url(" + list_img2[index-1] + ")","background-size":"auto 1500%"});
        
           
          };
@@ -347,7 +441,7 @@
        body{
        
       background-image: url("");
-      :950px 200px;
+      :95px 20px;
        
        }
        
@@ -360,24 +454,59 @@
        
          }
          
-       li{
+       .img_s{
        
-       
-
-
+       background-image:url("https://images.pexels.com/photos/4552688/pexels-photo-4552688.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
        
        
        }
        
+       .search{
        
+       background-color:#000000;opacity:0.6;
+       width:70%;
+       height:55px;
+       border-radius:30px;
+       position:absolute;
+       left:0px;
+       top:25px;
+       
+       
+      transition:0.4s;
+      line-height：40px;
+      width:55px;
+ 
+               }
+               
+       .search2{
+       
+       border-color:#000;opacity:100;
+       width: 0px;
+       position:relative;
+       margin: 0 auto;
+       height:0px;
+       left : 20px ;
+       top : 14px;
+      font-size: 30px;
+       background-color:#000000;
+       color: #cccccc;
+       display:none;
+       
+       }
+       
+       input:focus{
+       
+       outline:none;
+     
+                  
+                  }
        
          
        .hai{
        position:relative;
        right:100px;
        bottom:150;
-       
-       
+              
          }
          
        .change{
@@ -387,8 +516,8 @@
   
        height:285px;
        position:absolute;
-       left:800px;
-       top:450px;
+       left:280px;
+       top:300px;
        background-color:#000000;
        
        
@@ -401,11 +530,11 @@
        
            
        border-radius:30px;
-       width:90%;
+       width:80%;
        height:10%;
        position:absolute;
-       right:15px;
-       top:450px;
+       right:115px;
+       top:280px;
     
        
        
@@ -430,7 +559,7 @@
        
        ul li img{
        
-       width:25%;
+       width:30%;
        border-radius:30px;
                 }
        
@@ -438,7 +567,7 @@
        
            list-style: none;
            
-           width:40%;
+           width:100%;
            background-color:#000000;
            
            
@@ -481,7 +610,7 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                width: 10%;
+                width: 100%;
 
                 }
                 
@@ -521,31 +650,53 @@
 			
 			
     </style>
-    
-    
+
+
+           
+ 
+    <img id="img1" src="https://s1.328888.xyz/2022/05/03/hUIRQ.jpg"class="png"width="400"/>
+     
       
      <div style="background-color:#808080;position:absolute;bottom
-     :0;width:40%;left:0;">
+     :0;width:100%;left:0;">
+     
+     
+     
+     
+     
      
      </div>
      
-  
+             
+   <div class="search">
+
+<input class='search2'type='search'placeholder='搜歌'>
+
+<img id="search3" src="https://s1.328888.xyz/2022/07/16/NLiBR.png"style="position:absolute;top:12px;left:12px;"width="30px"/>
+ 
+</div>          
+
+
+
+<!----------------------------------------------------------------------->
+
      
-     <div class="center">
+     <div id="da"class="center">
      
          
-       <div class="mu"> 
+       <div id="mu" class="mu"> 
        
        
-       <img id="img" src="https://s1.328888.xyz/2022/05/02/AVt6X.jpg"style="width:30%;border-radius:30px;position:relative;
-  top:10px;right:300px; "/> 
+       <img id="img" src="https://s1.328888.xyz/2022/05/02/AVt6X.jpg"style="width:50%;border-radius:30px;position: absolute
+  ;right:155px; "/> 
   
   
    <img id="img2" src="https://s1.328888.xyz/2022/05/02/AFOw2.png"style="width:50%;border-radius:30px;position:absolute;
-  top:65px;right:30px; width:10%;"/> 
+  top:65px;right:30px; width:23%;"/> 
 
 
-  
+  <p id="text" style="font-size: 22px;color:#808080;position:absolute;
+  bottom:108px;left:210px;">诗来音乐<p>
   
       
        </div>
@@ -555,7 +706,7 @@
 
 	        
 	
-    <div class="choose">
+    <div class="choose" id="choose">
           
              
         
@@ -563,11 +714,7 @@
                     
 
                     
-                    <li style="border-radius:30px 30px 0px 0px;position:absolute;
-       right:250px;
-       bottom:160px;
-       width: 340px;
-    
+                    <li style="border-radius:30px 30px 0px 0px;
 "><div >&nbsp;&nbsp;</div></li>             
 
                     
@@ -606,8 +753,7 @@
 
            </div>
            
-           
- <div class="change">
+           <div class="change">
                                <a href="#">
 <img id="f" src="https://s1.328888.xyz/2022/05/02/AF3UB.png"style="position:relative;top:30%; "width="80px"/> 
                </a>
@@ -618,7 +764,7 @@
 <audio class="music" id="audio" src="http://218.205.239.34/MIGUM2.0/v1.0/content/sub/listenSong.do?toneFlag=HQ&netType=00&copyrightId=0&contentId=600919000000528509&resourceType=2&channel=0" loop="loop"></audio>
 
 
-  
+
                
 </body>
 </html>
